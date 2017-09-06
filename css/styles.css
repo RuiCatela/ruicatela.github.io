@@ -1,0 +1,502 @@
+html {
+    background-color: #242424;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body, .header, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    background-color: #242424;
+    margin-bottom: 0;
+}
+
+footer img {
+    width: 2.3rem;
+    text-align: center;
+    display: block;
+    margin: 3rem auto 1rem auto;
+    padding-top: 2rem;
+}
+    
+footer p {
+    width: 15rem;
+    margin: 3rem auto 0 auto;
+    padding-bottom: 2rem;
+    color: #6f6f6f;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(23, 96, 25);
+}
+
+.header h2 {
+    margin: 0px;
+    font-weight: normal;
+    font-family: "Cookie",sans-serif;
+    font-size: 3rem;
+    padding: 1rem 0 0 5rem;
+    width: 20rem;
+}
+
+.header h2 a {
+    color: white;
+}
+
+.header h2 img {
+    width: 2.3rem;
+    float: left;
+    padding: 0.5rem 1rem 0px 0px;
+}
+
+.header > p {
+    margin: 0px;
+    font-family: 'Permanent Marker', sans-serif;
+    color: rgb(200,200,200);
+    padding: 0.5rem 0 0.5rem 5rem;
+}
+
+.header span {
+    float: right;
+    margin-right: 5rem;
+    position: relative;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header span a.user:hover {
+    text-decoration: none;
+}
+
+.header span a {
+    color: white;
+}
+
+.header span a:hover {
+    text-decoration: underline;
+}
+
+.header span p {
+    color: yellow;
+}
+
+.header span div {
+    display: none;
+    position: absolute;
+    background-color: rgb(23, 96, 25);
+    z-index: 1;
+    padding: 12px 16px;
+    width: 16rem;
+    color: white;
+}
+
+.header span:hover div {
+    display: block;
+}
+
+    
+.presentation {
+    margin-bottom: 6rem;
+}
+
+.presentation-main h2 {
+    font-family: "Open Sans",sans-serif;
+    margin-left: 5rem;
+    color: rgb(30,30,30);	      
+}
+
+.point * {
+    display: inline-block;
+}
+
+.point div:first-child {
+    width: 2.5rem;
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 2rem;
+    color: rgb(90,90,90);
+    vertical-align: middle;
+    font-family: "Open Sans",sans-serif;
+}
+
+.point div:last-child {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(90,90,90);
+    vertical-align: middle;
+}
+
+.presentation-options {
+    margin-left: 7rem;
+}
+
+.presentation-options h3 {
+    font-family: "Open Sans",sans-serif;
+    color: rgb(15,141,150)
+}
+
+.presentation-options h3 {
+    margin-top: 4rem;
+}
+
+.presentation-options h3 span {
+    border-bottom: solid medium #DF0505;
+}
+
+.presentation-options .options a {
+    font-family: "Open Sans",sans-serif;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 0.8em;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    font-weight: bold
+}
+
+.presentation-options .options a:first-child {
+    background-color: rgb(242, 176, 9);
+    color: rgb(150, 100, 15);
+}
+
+.presentation-options .options a:first-child:hover {
+    background-color: rgb(252, 186, 19);
+}
+
+.presentation-options .options a:last-child {
+    margin-left: 1em;
+    background-color: rgb(41, 209, 209);
+}
+
+.presentation-options .options a:last-child:hover {
+    background-color: rgb(51, 219, 219);
+}
+
+.extra {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 5rem;
+    font-size: 1rem;
+}
+
+.extra ul {
+    list-style-type: none;
+}
+
+.extra li {
+    margin-bottom: 1rem;
+}
+
+.sabia li a {
+    text-decoration: none;
+}
+
+.sabia li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 60rem) {
+    .presentation {
+	display: flex;
+	flex-flow: row wrap;
+    }
+
+    .header {
+	width: 100%;
+    }
+
+    .presentation-main {
+	flex: 2;
+    }
+
+    .extra {
+	flex: 1;
+    }
+}
+
+@media (min-width: 80rem) {
+    .presentation-main {
+	flex: 5;
+    }
+    
+    .extra {
+	flex: 4;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 0px;
+    }
+
+    .lancamentos {
+	flex: 1;
+    }
+
+    .sabia {
+	flex: 1;
+    }
+    
+}
+
+
+nav.buildslist {
+    padding: 1rem 0px 0px 5rem;
+    background-color: rgb(15,141,150);
+    font-family: "open sans", sans-serif;
+    font-size: 1rem;
+    min-height: 2.75rem;
+    display: flex;
+}
+
+nav.buildslist a {
+    color: rgb(220,220,220);
+    margin-right: 1rem;
+}
+
+nav.buildslist a:hover {
+    color: yellow;
+}
+
+.builds {
+    padding-left: 5rem;
+    color: rgb(40,40,40);
+}
+
+.type div:first-child {
+    color: rgb(15,141,150);
+    font-family: "Open Sans",sans-serif;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.information {
+    list-style-type: none;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
+}
+
+.spec {
+    display: inline-block;
+    margin: 1rem 2rem 0 0;
+}
+
+.spec img {
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.spec a.page:hover {
+    text-decoration: underline;
+}
+
+.spec a.adapt {
+    background-color: rgb(82,127,14);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    width: 6rem;
+    text-align: center;
+}
+
+.spec a.adapt:hover {
+    background-color: rgb(92,137,24);
+}
+
+main.build {
+    margin-left: 5em;
+}
+
+.slots img, span img {
+    width: 1rem;
+}
+
+
+.form-wrapper {
+    padding: 1em;
+}
+
+@media (min-width: 45rem) {
+    .form-wrapper {
+	max-width: 45rem;
+	margin: 0 auto;
+    }
+}
+
+fieldset {
+    border-radius: 0.3rem;
+    border: 1px solid #666;
+    margin-top: 2rem;
+}
+
+legend {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 0.2rem;
+}
+
+.build legend {
+    background-color: #739327;
+}
+
+.choose legend {
+    background-color: #236A7E;
+}
+
+.form-intro h1 {
+    margin-bottom: 0;
+}
+
+.form-intro h2 {
+    margin-top: 0.3rem;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.form-Input_Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.form-Input_Wrapper label {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 15rem;
+    background-color: rgb(211, 214, 34);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+img:hover + .dropdown-content {
+    display: block;
+}
+
+@media (min-width: 45rem) {
+    .form-Input_Wrapper {
+	flex-direction: row;
+	align-items: center;
+    }
+    .form-Input_Wrapper input:not([type="number"]):not([type="checkbox"]) {
+	flex: 1 0 50%;
+    }
+    
+    .form-Input_Wrapper label, .form-Input_Wrapper span {
+	flex: 1 0 50%;
+	margin-bottom: 0;
+    }	
+    
+    .form-Input_Wrapper input[type="checkbox"] + label {
+	flex: none;
+	margin-bottom: 0;
+    }
+    			 
+    textarea {
+	flex: 1 0 50%;
+    }
+    select {
+	flex: 1 0 50%;
+    }
+}
+
+button.form-Submit_Btn {
+    margin: 1rem;
+    background-color: rgb(82,127,14);
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.build button.form-Submit_Btn {
+    width: 6rem;
+}
+
+.choose button.form-Submit_Btn {
+    width: 12rem;
+    position: relative;
+    right: 0px;
+    
+}
+
+button.save {
+    margin: 1rem;
+    background-color: rgb(181, 19, 19);
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.choose button.save {
+    width: 6rem;
+    vertical-align: baseline;
+    margin-bottom: 3rem;
+}
+
+.choose ul {
+    list-style-type: none;
+}
+
+.choose .choosefrom div {
+    display: inline-block;
+}
+
+.choose .choosefrom div p {
+    margin-top: 0;
+    margin-left: 25px;
+}
+
+.maxmin {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: brown;
+    vertical-align: top;
+}
+
+.choosefrom li label a:hover {
+    text-decoration: underline;
+}
+
+.choose #price {
+    margin: 2rem 0;
+    border: 1px solid #666;
+    color: rgb(30,30,30);
+    padding: 2rem;
+    background-color: white;
+}
+
+/*
+.build img {
+    display: block;
+}
+*/

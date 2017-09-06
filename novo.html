@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Build - Página de exemplo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel='stylesheet'>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0" />
+  </head>
+  <body>
+    <header class="header">
+      <!--
+      <h2><img src="team.svg" alt="Título do site"><div>Título do site</div></h2>
+      -->
+      <h2><a href="./"><img src="banner5.svg" alt="Título do site">Título do site</a></h2>
+      <span>
+	<a href="#" class="user">&#129170; Jorge1984</a>
+	<div>
+	  <p>5 setembro 2017<br />
+	    16:40
+	    </p>
+	  <ul>
+	    <li>
+	      <a href="build.html">opções da build</a>
+	    </li>
+	    <li>
+	      <a href="escolher.html">escolha final</a>
+	    </li>
+	  </ul>
+	</div>
+      </span>
+      <p>mensagem de texto</p>
+    </header>
+    <main class="build">
+      <form class="form-wrapper" id="redemption" method="post" action="escolher.html">
+	<div class="form-intro">
+	  <h1>Adaptar</h1>
+	  <h2>Aqui podes adaptar a build às tuas necessidades.</h2>
+	</div>
+	<fieldset>
+	  <legend>Desempenho do pc</legend>
+	  <div class="form-Input_Wrapper">
+	    <label for="cpu">Processador</label>
+	    <select id="cpu" name="cpu" required>
+	      <option selected>Não Selecionado</option>
+	      <optgroup label="Intel">
+		<option value="1">Intel Celeron G3900</option>
+		<option value="2">Intel Pentium G4560</option>
+		<option value="3">Intel Core i3-7100</option>
+		<option value="4">Intel Core i5-7400</option>
+		<option value="5">Intel Core i7-7700</option>
+	      </optgroup>
+	      <optgroup label="AMD">
+		<option value="6">AMD Ryzen 3 1200</option>
+		<option value="7">AMD Ryzen 5 1600</option>
+		<option value="8">AMD Ryzen 7 1700</option>
+		<optgroup>
+	    </select>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="gpu">Placa gráfica</label>
+	    <select id="gpu" name="gpu">
+	      <option selected>Não Selecionado</option>
+	      <optgroup label="Nvidia">
+		<option value="1">Nvidia GeForce 1050 2GB</option>
+		<option value="2">Nvidia GeForce 1050 Ti 4GB</option>
+		<option value="3">Nvidia GeForce 1060 3GB</option>
+		<option value="4">Nvidia GeForce 1060 6GB</option>
+		<option value="5">Nvidia GeForce 1070 8GB</option>
+		<option value="6">Nvidia GeForce 1080 8GB</option>
+		<option value="7">Nvidia GeForce 1080 Ti 11GB</option>
+	      </optgroup>
+	      <optgroup label="AMD">
+		<option value="8">AMD Radeon 560 4GB</option>
+	      <option value="9">AMD Radeon 570 4GB</option>
+		<option value="10">AMD Ryzen 580 4GB</option>
+		<option value="11">AMD Ryzen 580 8GB</option>
+		<optgroup>
+	    </select>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Memória</legend>
+	  <div class="form-Input_Wrapper">
+	    <label for="hdd">Disco rigido</label>
+	    <select id="hdd" name="hdd" required>
+	      <option selected>Não Selecionado</option>
+	      <option value="1">HDD 500GB</option>
+	      <option value="2">HDD 1TB</option>
+	      <option value="3">HDD 2TB</option>
+	      <option value="4">HDD 3TB</option>
+	      <option value="5">HDD 4TB</option>
+	      <option value="6">HDD 6TB</option>
+	    </select>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="ssd">SSD</label>
+	    <select id="ssd" name="ssd">
+	      <option selected>Não Selecionado</option>
+	      <optgroup label="2.5&quot;">
+		<option value="1">SSD a rondar os 100GB</option>
+		<option value="2">SSD a rondar os 200GB</option>
+		<option value="3">SSD a rondar os 300GB</option>
+		<option value="4">SSD a rondar os 500GB</option>
+		<option value="5">SSD a rondar os 600GB</option>
+		<option value="6">SSD a rondar 1TB</option>
+		<option value="7">SSD a rondar os 2TB</option>
+		<option value="8">SSD a rondar os 4TB</option>
+	      </optgroup>
+	      <optgroup label="M.2">
+		<option value="8">SSD a rondar os 100GB</option>
+		<option value="9">SSD a rondar os 200GB</option>
+		<option value="10">SSD a rondar os 300GB</option>
+		<option value="11">SSD a rondar os 500GB</option>
+		<option value="12">SSD a rondar 1TB</option>
+		<option value="13">SSD a rondar os 2TB</option>
+	      </optgroup>
+	      <optgroup label="PCI">
+		<option value="14">SSD a rondar os 200GB</option>
+		<option value="15">SSD a rondar os 300GB</option>
+		<option value="16">SSD a rondar os 500GB</option>
+		<option value="11">SSD a rondar 1TB</option>
+	      </optgroup>
+	    </select>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="ddr">RAM</label>
+	    <select id="ddr" name="ddr" required>
+	      <option selected>Não Selecionado</option>
+	      <optgroup label="DDR4">
+		<option value="1">DDR4 4GB</option>
+		<option value="2">DDR4 8GB</option>
+		<option value="3">DDR4 12GB</option>
+		<option value="4">DDR4 16GB</option>
+		<option value="5">DDR4 20GB</option>
+		<option value="6">DDR4 24GB</option>
+		<option value="6">DDR4 28GB</option>
+		<option value="6">DDR4 32GB</option>
+		<option value="6">DDR4 36GB</option>
+		<option value="6">DDR4 40GB</option>
+		<option value="6">DDR4 44GB</option>
+		<option value="6">DDR4 48GB</option>
+		<option value="6">DDR4 52GB</option>
+		<option value="6">DDR4 56GB</option>
+		<option value="6">DDR4 60GB</option>
+		<option value="6">DDR4 64GB</option>
+	    </optgroup>
+	    </select>
+	</div>
+	</fieldset>
+	<fieldset>
+	  <legend>Ligações adicionais</legend>
+	  <div class="form-Input_Wrapper">
+	    <label for="2,5reserve">Compartimentos adicionais de 2.5"</label>
+	    <input id="2,5reserve" name="2,5reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="3,5reserve">Compartimentos adicionais de 3.5"</label>
+	    <input id="3,5reserve" name="3,5reserve" type="number" min="0" value="0" required>
+	</div>
+	  <div class="form-Input_Wrapper">
+	    <label for="5,25reserve">Compartimentos adicionais de 5.25"</label>
+	    <input id="5,25reserve" name="5,25reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="pcix16reserve">Ligações adicionais de PCIx16</label>
+	    <input id="pcix16reserve" name="pcix16reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="pcix8reserve">Ligações adicionais de pelo menos PCIx8</label>
+	    <input id="pcix8reserve" name="pcix8reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="pcix4reserve">Ligações adicionais de pelo menos PCIx4</label>
+	    <input id="pcix4reserve" name="pcix4reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="pcix1reserve">Ligações adicionais de pelo menos PCIx1</label>
+	    <input id="pcix1reserve" name="pcix1reserve" type="number" min="0" value="0" required>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <label for="m,2">Ligações adicionais de M.2</label>
+	  <input id="m,2" name="m,2" type="number" min="0" value="0" required>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Opções para poupar dinheiro</legend>
+	  <div class="slots form-Input_Wrapper">
+	    <input type="checkbox" id="reducedMemorySlots" name="reduced" value="yes">
+	    <label for="reducedMemorySlots">Menos slots de memória <img src="information.svg" title="Um pc modesto não precisa de tantos bancos de memória"></label>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Isto vai-lhe custar mais dinheiro</legend>
+	  <div class="form-Input_Wrapper">
+	    <input type="checkbox" id="dvd" name="dvd" value="yes">
+	    <label for="dvd">Leitor/Gravador de dvd</label>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <input type="checkbox" id="expensiveupgrade" name="expensiveupgrade" value="yes">
+	    <label for="expensiveupgrade">Caixa preparada para upgrade para componentes de alto desempenho</label>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <input type="checkbox" id="silence" name="silence" value="yes">
+	    <label for="silence">Silencioso</label>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <input type="checkbox" id="leitorsd" name="leitorsd" value="yes">
+	    <label for="leitorsd">Leitor de cartões SD</label>
+	  </div>
+	  <div class="form-Input_Wrapper">
+	    <input type="checkbox" id="placaderedewifi" name="placaderedewifi" value="yes">
+	    <label for="placaderedewifi">Placa de rede wireless</label>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Tamanhos da motherboard a considerar</legend>
+	  <div class="caseform form-Input_Wrapper">
+	    <input type="checkbox" id="atx" name="atx" value="yes" checked>
+	    <label for="atx">ATX</label>
+	    <input type="checkbox" id="microatx" name="microatx" value="yes" checked>
+	    <label for="microatx">Micro-ATX</label>
+	    <input type="checkbox" id="miniitx" name="miniitx" value="yes" action="escolher.html">
+	    <label for="miniitx">Mini-ITX</label>
+	  </div>
+	</fieldset>
+	<button class="form-Submit_Btn" type="submit" value="Procurar">Procurar</button>
+      </form>
+    </main>
+    <footer>
+      <p>Meu site<br /> @ copyright 2017</p>
+    </footer>
+  </body>
+</html>

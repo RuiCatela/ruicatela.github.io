@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Página de exemplo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/specs.css">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel='stylesheet'>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0" />
+    <script src="jquery-3.2.1.js"></script>
+    <script src="escolher.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h2><a href="./"><img src="banner5.svg" alt="Título do site">Título do site</a></h2>
+      <span>
+	<a href="#" class="user">&#129170; Jorge1984</a>
+	<div>
+	  <p>5 setembro 2017<br />
+	    16:40
+	  </p>
+	  <ul>
+	    <li>
+	      <a href="build.html">opções da build</a>
+	    </li>
+	    <li>
+	      <a href="escolher.html">escolha final</a>
+	    </li>
+	  </ul>
+	</div>
+      </span>
+      <p>mensagem de texto</p>
+    </header>
+    <main class="choose">
+      <form class="form-wrapper" method="post">
+	<div class="form-intro">
+	  <h1>Computador completo</h1>
+	  <h2>Todos os componentes têm links associados para os correspondentes na loja da Globaldata e tem a possibilidade entre deixar a Globaldata montar o computador ou montar voçê mesmo. Pode também escolher entre alternativas compativeis para os componentes.</h2>
+	</div>
+
+	<fieldset>
+	  <legend>Desempenho do pc</legend>
+	  <div class="choosefrom">
+	    <div>
+	      <label>Processador</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="processor1choice1" name="processor1" checked value="1" price="8990"><label for="processor1choice1"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=BX80677G4560" target="_blank">Intel Pentium G4560</a></label>
+		  <p><strong>Preço:</strong> 89,90€</p>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	  <div class="choosefrom">
+	    <div>
+	      <label>Placa Gráfica</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="gpu1choice1" name="gpu1" checked value="1" price="24491"><label for="gpu1choice1"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=912-V328-088R">Gráfica MSI GeForce® GTX 1060 AERO ITX OC 3GB GD5</a></label>
+		  <p><strong>Interfaces:</strong> Dual-link DVI-D: 1;DisplayPort 1.4: 2;HDMI 2.0: 2<br /><strong>Preço:</strong> 244,91€</p>
+		</li>
+		<li>
+		  <input type="radio" id="gpu1choice2" name="gpu1" value="2"  price="25491"><label for="gpu1choice2"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=912-V328-033">Gráfica MSI GeForce® GTX 1060 ARMOR OCV1 3GB GD5</a></label>
+		  <p><strong>Interfaces:</strong> Dual-link DVI-D: 1;DisplayPort 1.4: 2;HDMI 2.0: 2<br /><strong>Preço:</strong> 254,91€</p>
+		</li>
+		<li>
+		  <input type="radio" id="gpu1choice3" name="gpu1" value="3"  price="27990"><label for="gpu1choice3"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=912-V328-014">Gráfica MSI GeForce® GTX 1060 GAMING X 3GB GD5</a></label>
+		  <p><strong>Interfaces:</strong> Dual-link DVI-D: 1;DisplayPort 1.4: 3;HDMI 2.0: 1<br ><strong>Preço:</strong> 279,90€</p>
+		</li>
+		<li>
+		  <input type="radio" id="gpu1choice4" name="gpu1" value="4" price="27990"><label for="gpu1choice4"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=GV-N1060WF2OC-3GD">Gráfica Gigabyte GeForce® GTX 1060 WindForce 2X OC 3GB GD5</a></label>
+		  <p><strong>Interfaces:</strong> Dual-link DVI-D: 2;DisplayPort 1.4: 1;HDMI 2.0: 1<br /><strong>Preço:</strong> 279,90€</p>
+		</li>
+		<li>
+		  <input type="radio" id="gpu1choice5" name="gpu1" value="5"  price="32990"><label for="gpuchoice5"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=90YV09X3-M0NA00">Gráfica Asus GeForce® GTX 1060 DUAL OC 3GB GD5</a></label>
+		  <p><strong>Interfaces:</strong> Dual-link DVI-D: 1;DisplayPort 1.4: 2;HDMI 2.0: 2<br /><strong>Preço:</strong> 329,90€</p>
+		</li>
+		<li>
+		  <button class="button">Menos</button>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</fieldset>
+
+	
+	<fieldset>
+	  <legend>Memória</legend>
+	  <div class="choosefrom">
+	    <div>
+	      <label>SDD</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="sdd1choice1" name="sdd1" checked value="1" price="9489"><label for="sdd1choice1"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=WDS250G1B0A" target="_blank">SSD 2.5 Western Digital Blue 250GB TLC</a></label>
+		  <p><strong>Leitura:</strong> 545MB/s <strong>Escrita:</strong> 525MB/s <strong>Garantia:</strong> 3 anos<br /><strong>Preço:</strong> 94,89€</p>
+		</li>
+		<li>
+		  <input type="radio" id="sdd1choice2" name="sdd1" value="2" price="9790"><label for="sdd1choice2"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=CT275MX300SSD1" target="_blank">SSD 2.5" Crucial MX300 275GB TLC</a></label><p><strong>Leitura:</strong> 530MB/s <strong>Escrita:</strong> 510MB/s <strong>Garantia:</strong> 3 anos<br /><strong>Preço:</strong> 97,90€</p>
+		</li>
+		<li>
+		  <input type="radio" id="sdd1choice3" name="sdd1" value="3" price="9990"><label for="sdd1choice3"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=MZ-75E250B%2FEU">SSD Samsung 850 Evo 250GB SATA III</a></label><p><strong>Leitura:</strong> 520Mb/s <strong>Escrita:</strong> 540Mb/s <strong>Garantia:</strong> 5 anos<br /><strong>Preço:</strong> 99,90€</p>
+		</li>
+		<li>
+		  <input type="radio" id="sdd1choice4" name="sdd1" value="4" price="24290"><label for="sddchoice4"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=MZ-7KE256BW" target="_blank">SSD 2.5" Samsung 850 Pro 256GB MLC</a></label><p><strong>Leitura:</strong> 550Mb/s <strong>Escrita:</strong> 520Mb/s <strong>Garantia:</strong> 10 anos<br /><strong>Preço:</strong> 142,90€</p>
+		</li>
+		<li>
+		  <button class="button">Menos</button>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	  <div class="choosefrom">
+	    <div>
+	      <label>RAM</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="ram1choice1" name="ram1" value="5" checked  price="7090"><label for="ramchoice1"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=F4-3000C16S-8GISB" target="_blank">Memória RAM G.SKILL Aegis 8GB (1x8GB) DDR4-3000MHz CL16</a></label>
+		  <p><strong>Preço:</strong> 70,90€</p>
+		</li>
+	      </ul>
+	    </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Placa mãe</legend>
+	  <div class="choosefrom">
+	    <div>
+	      <label>Motherboard</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="motherboardchoice1" name="motherboard1" value="1" checked price="7090"><label for="motherboardchoice1"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=911-7A70-003" target="_blank">Motherboard MSI B250M PRO-VDH</a></label>
+		  <p><strong>Preço:</strong> 70,90€</p>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Caixa</legend>
+	  <div class="choosefrom">
+	    <div>
+	      <label>Caixa</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="caixachoice1" name="caixa1" value="1" checked price="2590"><label for="caixachoice1" price="2590"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=NXCBAYMX2" target="_blank">Caixa Micro-ATX Nox Coolbay MX2 Preta</a></label>
+		  <p><strong>Ligações:</strong> USB 3: 1;USB 2: 2;Ligações audio: sim<br /><strong>Preço:</strong> 25,90€</p>
+		  
+		</li>
+		<li>
+		  <input type="radio" id="caixachoice2" name="caixa1" value="2"  price="3490"><label for="caixachoice2"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=Z1" target="_blank">Caixa ATX Zalman Z1</a></label>
+		  <p><strong>Ligações:</strong> USB 3: 1;USB 2: 2;Ligações audio: sim<br /><strong>Preço:</strong> 34,90€</p>
+		  
+		</li>
+		<li>
+		  <button class="button">Menos</button>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</fieldset>
+	<fieldset>
+	  <legend>Fonte de alimentação</legend>
+	  <div class="choosefrom">
+	    <div>
+	      <label>PSU</label><br />
+	      <ul>
+		<li>
+		  <input type="radio" id="fontechoice1" name="fonte1" value="1" checked price="5489"><label for="fontechoice1" price="5489"><a href="https://www.globaldata.pt/shop/advancedsearch/result/?q=S12II-520" target="_blank">Fonte Seasonic S12II 520W 80+ Bronze</a></label>
+		  <p><strong>Preço:</strong> 54,89€</p>
+		</li>
+	      </ul>
+	    </div>
+	  </div>
+	</fieldset>
+	<div id="price"><strong>Preço:</strong> <span>655.29€ + 15€(montagem) = 670.29€</span></div>
+	<button class="save" type="submit" value="Actualizar">Guardar</button>
+	<button class="form-Submit_Btn" type="submit" value="Actualizar">Actualizar especificações</button>
+      </form>
+      <div class="specifications">
+	<div class="label">Especificações</div>
+	<div class="component intel kabylake">
+	  <img alt="Intel Pentium" src="imagens/pentium-kaby-lake.gif" class="intel-kaby-lake">
+	  <h1>Intel Pentium G4560</h1>
+	  <div class="ref">3M Cache, 3.50GHz</div>
+	  <p>Benchmark: <a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel+Pentium+G4560+%40+3.50GHz&id=2925">5079</a></p>
+	  <p>Cores: 2</p>
+	  <p>Cores lógicos: 4</p>
+	  <p>Frequência base do processador: 3.50Ghz</p>
+	  <p>Socket: LGA 1151</p>
+	  <p>Tipos de memória: DDR4-2133/2400, DDR3L-1333/1600 @ 1.35V</p>
+	  <p>Litografia: 14nm</p>
+	  <p>Consumo: 54W</p>
+	</div>
+	<div class="component nvidea geforce1060">
+	  <img alt="GeForce GTX 1060 AERO ITX 3G OC" src="imagens/GeForce-GTX-!060-MSI-AERO-ITC-3G-OC.png" class="nvidea">
+	  <h1>GeForce GTX 1060 AERO ITX 3G OC</h1>
+	  <div class="ref">Directx: 12, OpenGL: 4.5</div>
+	  <p>Benchmark: <a href="https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1060+3GB">8600</a></p>
+	  <p>Interface: PCI Express x16 3.0</p>
+	  <p>Memória: 3GB GDDR5</p>
+	  <p>Output: DisplayPort x 2 (Versão 1.4) / HDMI x 2 (Versão 2.0) / DL-DVI-D</p>
+	  <p>Consumo: 120W</p>
+	  <p>Dimensões da placa: 175 x 115 x 38 mm</p>
+	  <p>Directx: 12</p>
+	  <p>OpenGL: 4.5</p>
+	  <p>Máximo de ecrãs: 4</p>
+	  <p>Realidade virtual: Sim</p>
+	</div>
+	<div class="component wd sdd250">
+	  <img alt="ssd western digital blue 250GB" src="imagens/ssd-wd-blue-250.png" class="wd">
+	  <h1>SSD western digital blue 250GB</h1>
+	  <div class="ref">Capacidade: 250GB</div>
+	  <p>Leitura: Até 545MB/s</p>
+	  <p>Escrita: Até 525MB/s</p>
+	  <p>Capacidade: 250GB</p>
+	  <p>Formato: 2.5&quot;</p>
+	  <p>Garantia: 3 anos</p>
+	  <p>Durabilidade: 100 Terabytes escritos</p>
+	  <p>Interface: SATA III 6Gb s</p>
+	</div>
+	<div class="component gskill aegis8GB">
+	  <img alt="G.SKILL Aegis 8GB (1x8GB) DDR4-3000MHz CL16" src="imagens/F4-3000C16S-8GISB.png" class="GSKILL">
+	  <h1>G.SKILL Aegis 8GB DDR4-3000MHz CL16</h1>
+	  <div class="ref">Capacidade: 8GB</div>
+	  <p>Capacidade: 8GB (8GB x 1)</p>
+	  <p>Velocidade testada: 3000MHz</p>
+	  <p>Latencia testada: 16-18-18-38</p>
+	  <p>Voltagem testada: 1.35v</p>
+	  <p>Velocidade SPD: 2133MHz</p>
+	  <p>Voltagem SPD: 1.20</p>
+	  <p>Intel XMP 2.0 : Sim</p>
+	</div>
+	<div class="component msi sdd250">
+	  <img alt="MSI B250M PRO-VDH" src="imagens/B250M-PRO-VDH.png" class="MSI">
+	  <h1>B250M PRO-VDH</h1>
+	  <div class="ref">Socket: 1151</div>
+	  <p>chipset: Intel B250</p> 
+	  <p>Memória DDR4: 2400/2133 MHz</p>
+	  <p>Canal de comunicação: Duplo</p>
+	  <p>Memória máxima: 64GB</p>
+	  <p>PCI-Ex16: 1</p>
+	  <p>PCI-Ex1: 2</p>
+	  <p>SATAIII: 6</p>
+	  <p>Banco para M.2: 1</p>
+	  <p>Formato: Micro-ATX</p>
+	</div>
+	<div class="component nox-coolbay mx2">
+	  <img alt="Nox coolbay mx2" src="imagens/coolbay-mx2-transparency.png" class="nox">
+	  <h1>Nox coolbay mx2</h1>
+	  <div class="ref">Mini Tower</div>
+	  <p>Motherboard: Micro ATX</p>
+	  <p>Arrefecimento (incluido): Frente 1x 120mm</p>
+	  <p>Arrefecimento (opcional): Atráz 1x 120/240mm;Lado 1x 120/140mm</p>
+	  <p>Arrefecimento opcional (água): Frente 120/240mm;Atráz 120/240mm</p>
+	  <p>Fonte de alimentação: (Standard ATX)</p>
+	  <p>Espaço livre: Placa gráfica 350mm (máx);Cooler do processador 160mm (máx)
+	  <p>Dimensões: 198x396x400</p>
+	  <p>Peso: 2.4Kg</p>
+	</div>
+	<div class="component seasonic s12ii-520">
+	  <img alt="Seasonic s12II-520" src="imagens/seasonic-S12II-520.png" class="seasonic">
+	  <h1>Seasonic S12II 520W 80+ Bronze</h1>
+	  <div class="ref">520W</div>
+	  <p>Eficiência: 80PLUS Bronze</p>
+	  <p>Tipo: Intel ATX 12V</p>
+	  <p>Dimensões: 150mm (Largura) x 140mm (Comprimento) x 86mm (Altura)</p>
+	  <p>Garantia: 5 anos</p>
+	</div>
+	<div class="connections">
+	  <h1>Ligações</h1>
+	  <p>PCI Express x 16: 1 (ocupado)</p>
+	  <p>Drives 2.5&quot;: 1 (ocupado)</p>
+	  <p>Drives 2.5&quot;: 1 (livre)</p>
+	  <p>Drives 3.5&quot;: 2 (livre)</p>
+	  <p>Drives 5.25&quot;: 1 (livre)</p>
+	  <p>Banco M.2: 1 (livre)</p>
+	  <p>Ethernet 10/100/1000: 1</p>
+	  <p>USB 3.1 Frente: 1</p>
+	  <p>USB 2.0 Frente: 2</p>
+	  <p>HD Audio</p>
+	  <p>Microfone</p>
+	  <p>USB 3.1 (tipo A) Atráz: 3</p>
+	  <p>USB 3.1 (tipo C) Atráz: 1</p>
+	  <p>USB 2.0 Atráz: 2</p>
+	  <p>Leitor de cartões SD/ micro SD</p>
+	</div>
+      </div>
+    </main>
+    <footer>
+      <p>Meu site<br /> @ copyright 2017</p>
+    </footer>
+  </body>
+</html>

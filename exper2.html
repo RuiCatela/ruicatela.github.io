@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt">
+<head>
+   <meta charset="utf-8">
+   <title>Exemplo</title>
+   <script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+<fieldset>
+   <legend>Harry Potter</legend>
+   <ul>
+      <li>
+         <input type="radio" id="harrypotter1" name="harrypotter" checked value="1" price="700"><label for="harrypotter1">Harry Potter and the Philosopher's Stone</label>
+         <p><strong>Preço:</strong> 7,00€</p>
+      </li>
+      <li><input type="radio" id="harrypotter2" name="harrypotter" value="2" price="1208"><label for="harrypotter2">Harry Potter and the Chamber of Secrets</label>
+         <p><strong>Preço:</strong>  12,08€</p>
+      </li>
+   </ul>
+</fieldset>
+<fieldset>
+   <legend>Blake and Mortimer</legend>
+   <ul>
+      <li>
+         <input type="radio" id="blakeandmortimer1" name="blakeandmortimer" checked value="3" price="899"><label for="blakeandmortimer1">The Yellow "M"</label>
+         <p><strong>Preço:</strong> 8,99€</p>
+      </li>
+      <li>
+         <input type="radio" id="blakeandmortimer2" name="blakeandmortimer" value="4" price="799">
+         <label for="blakeandmortimer2">Atlantis Mystery</label>
+         <p><strong>Preço:</strong> 7,99€</p>
+      </li>
+   </ul>
+</fieldset>
+<fieldset>
+   <legend>Cool & Lam</legend>
+   <ul>
+      <li>
+         <input type="radio" id="coolandlam1" name="coolandlam" checked value="5" price="1899"><label for="coolandlam1">Shills can't cash chips</label>
+         <p><strong>Preço:</strong> 18,99€</p>
+      </li>
+      <li>
+         <input type="radio" id="coolandlam2" name="coolandlam" value="6" price="898"><label for="coolandlamr2">The count of nine</label>
+         <p><strong>Preço:</strong> 8,98€</p>
+      </li>
+   </ul>
+</fieldset>
+
+<div id="totalprice">Preço total: A calcular...</div>
+
+
+<script>
+   $(document).ready(function(){
+
+      $("input[type=radio]").change(update_price);
+
+      update_price();
+
+      function update_price() {
+
+         var total_price = 0;
+
+         $("input:checked[type=radio]").each(function () {
+
+            total_price += parseInt($(this).attr('price'));
+
+         });
+
+         $('#totalprice').text('Preço total: ' + total_price/100 + '€');
+
+      }
+   });
+</script>
+</body>
+</html>
