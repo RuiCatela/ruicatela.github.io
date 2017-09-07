@@ -131,7 +131,7 @@ a {
     font-size: 2rem;
     color: rgb(90,90,90);
     vertical-align: middle;
-    font-family: 'Source Sans Pro','Open Sans',sans-serif;
+    font-family: 'Source Sans Pro','Open Sans',Arial,Helvetica,sans-serif;
 }
 
 .point div:last-child {
