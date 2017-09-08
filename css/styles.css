@@ -49,7 +49,6 @@ a {
     font-family: "Cookie",sans-serif;
     font-size: 3rem;
     padding: 1rem 0 0 5rem;
-    width: 20rem;
 }
 
 .header h2 a {
@@ -60,6 +59,15 @@ a {
     width: 2.3rem;
     float: left;
     padding: 0.5rem 1rem 0px 0px;
+}
+
+.header span img {
+    width: 1.3rem;
+    vertical-align: middle;
+}
+
+.header span strong {
+    vertical-align: super;
 }
 
 .header > p {
@@ -85,6 +93,10 @@ a {
 
 .header span a {
     color: white;
+}
+
+.header span > a {
+    color: rgb(200,200,200);
 }
 
 .header span a:hover {
